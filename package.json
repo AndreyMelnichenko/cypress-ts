@@ -1,0 +1,16 @@
+{
+  "name": "cypress-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "Andrii Melnychecnko <melnichenko.andrey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.6.0",
+    "typescript": "^4.7.4"
+  }
+}
