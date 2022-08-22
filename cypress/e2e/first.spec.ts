@@ -1,11 +1,9 @@
-/// <reference types="cypress" />
-
 describe("Typescript + Cypress", () => {
     beforeEach(() => {
     cy.visit('/')
   })
 
-it('Check H2 text', () => {
+  it('Check H2 text', () => {
     cy.get('h2')
       .should('have.length', 1)
       .should('have.text','Available Examples')

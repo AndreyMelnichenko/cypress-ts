@@ -52,8 +52,33 @@ it('Check H2 text', () => {
 })
 ```
 
+## Replace native Cypress Dashboard to Sorry Cypress
+1. All docs for Sorry Cypress [here](https://docs.sorry-cypress.dev)
+1. Install dependencies 
+```
+$ npm i cy2
+```
+1. Add api env variables
+```
+$ export CYPRESS_API_URL="http://localhost:1234/"
+```
+1. Run Sorry Cypress Dashboard service
+```
+$ docker-compose -f ./docker-compose.minio.yml up
+```
+1. As result we have 
+- director service on http://localhost:1234
+- API service on http://localhost:4000
+- Dashboard running on http://localhost:8080
+
 ## Run test
 
+1. Run test locally
 ```
 $ npm test
+```
+
+1. Ru tests by sorry cypress
+```
+$ npx cy2 run --record --key XXX --parallel --ci-build-id `date +%s` --browser chrome
 ```

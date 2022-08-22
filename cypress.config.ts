@@ -7,6 +7,7 @@ export default defineConfig({
     },
     baseUrl: 'http://the-internet.herokuapp.com',
     excludeSpecPattern: ["**/1-getting-started/*", "**/2-advanced-examples/*"],
-    specPattern: ["**/e2e/*.js", "**/e2e/*.ts"]
+    specPattern: ["**/e2e/*.js", "**/e2e/*.ts"],
+    projectId: "Cy+TS"
   },
 });
